@@ -1,0 +1,24 @@
+I tensorflow/stream_executor/dso_loader.cc:111] successfully opened CUDA library libcublas.so locally
+I tensorflow/stream_executor/dso_loader.cc:111] successfully opened CUDA library libcudnn.so locally
+I tensorflow/stream_executor/dso_loader.cc:111] successfully opened CUDA library libcufft.so locally
+I tensorflow/stream_executor/dso_loader.cc:111] successfully opened CUDA library libcuda.so.1 locally
+I tensorflow/stream_executor/dso_loader.cc:111] successfully opened CUDA library libcurand.so locally
+libdc1394 error: Failed to initialize libdc1394
+Traceback (most recent call last):
+  File "train.py", line 4, in <module>
+    import driving_data
+  File "/sharefolder/ai-world-car-team-c2/cirpue49/driving_data.py", line 18, in <module>
+    df = pd.read_csv('/home/kosuke/sharefolder/sdc-data/ch2_002/interpolated.csv')
+  File "/usr/local/lib/python3.4/dist-packages/pandas/io/parsers.py", line 645, in parser_f
+    return _read(filepath_or_buffer, kwds)
+  File "/usr/local/lib/python3.4/dist-packages/pandas/io/parsers.py", line 388, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/usr/local/lib/python3.4/dist-packages/pandas/io/parsers.py", line 729, in __init__
+    self._make_engine(self.engine)
+  File "/usr/local/lib/python3.4/dist-packages/pandas/io/parsers.py", line 922, in _make_engine
+    self._engine = CParserWrapper(self.f, **self.options)
+  File "/usr/local/lib/python3.4/dist-packages/pandas/io/parsers.py", line 1389, in __init__
+    self._reader = _parser.TextReader(src, **kwds)
+  File "pandas/parser.pyx", line 373, in pandas.parser.TextReader.__cinit__ (pandas/parser.c:4019)
+  File "pandas/parser.pyx", line 665, in pandas.parser.TextReader._setup_parser_source (pandas/parser.c:7967)
+FileNotFoundError: File b'/home/kosuke/sharefolder/sdc-data/ch2_002/interpolated.csv' does not exist
