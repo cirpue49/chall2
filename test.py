@@ -18,11 +18,11 @@ OUTPUT_CHAN = 3
 IMAGES_DIR = '/root/sharefolder/sdc-data/ch2_001/center/'
 
 #check
-RESULT_FILE = '/root/sharefolder/sdc-data/ch2_001/result/benchmark.csv'
+RESULT_FILE = '/root/sharefolder/sdc-data/ch2_001/result/benchmark5.csv'
 #check
 CKPT_FILE = './save/model.ckpt'
 #check
-smoothing = False
+smoothing = True
 
 
 imfiles = []
